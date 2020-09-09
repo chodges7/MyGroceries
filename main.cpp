@@ -27,7 +27,7 @@ int main()
   }while( input != 'q' && input != 'Q' );
 
   if(list.size() == 0){
-    cout << "there are no items on the list."
+    cout << "there are no items on the list.\n";
   }
   else{
     for(int x = 0; x < (int)list.size(); x++){
