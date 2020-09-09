@@ -18,13 +18,21 @@ int main()
 
     if( input == 'a' || input == 'A' )
     {
-        string item;
-        cout<<"What item? ";
-        cin.ignore();
-        getline(cin,item);
-        list.push_back(item);
+      string item;
+      cout<<"What item? ";
+      cin.ignore();
+      getline(cin,item);
+      list.push_back(item);
     }
   }while( input != 'q' && input != 'Q' );
-    
+
+  if(list.size() == 0){
+    cout << "there are no items on the list."
+  }
+  else{
+    for(int x = 0; x < (int)list.size(); x++){
+      cout << x + 1 << ") " << list[x] << endl;
+    }
+  }
   return 0;
 }
